@@ -9,7 +9,6 @@ Searching up ROT13 decoder online and inputting the given flag through the decod
 
 ![rot13 website](files/rot13.png)
 
-flag: 
 ```
 picoCTF{next_time_I'll_try_2_rounds_of_rot13_hWqFsgzu}
 ```

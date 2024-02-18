@@ -9,3 +9,6 @@ Opening this file using notepad it gives us the flag!
 
 ![image 2](files/flag.png)
 
+```
+picoCTF{s4n1ty_v3r1f13d_4a2b35fd}
+```
