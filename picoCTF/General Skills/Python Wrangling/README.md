@@ -1,109 +1,32 @@
 # Python Wrangling (2021 | 10 pts)
 
-![[Pasted image 20240219162046.png]]
+![image](files/desc.png)
 
 We are given a python script [ende](files/ende) 
+
+A txt file [pw](files/pw.txt) containing encoded password
 ```
-import sys
+68f88f9368f88f9368f88f9368f88f93
+```
 
-import base64
+An EN file [flag.txt](files/flag.txt.en) containing the encoded flag
+```
+gAAAAABgUAIV8D5MJdzgLLTkkMlbU84ARVwfX4brMt2rJQCjkpLItytfWVZe1L2dp4K8VrKgRU3axStKJEAqcM0iDaxiYE54Boh8UfAAo1RNifKnlDrFz0gLaznVSFVj2xAUa4V35180
+```
 
-from cryptography.fernet import Fernet
+In the given python script, we can see that the script requires a "pole.txt" file to decrypt. So we'll rename the flag file to "pole.txt" using the ```cp``` command.
 
-usage_msg = "Usage: "+ sys.argv[0] +" (-e/-d) [file]"
+![code](files/code.png) 
 
-help_msg = usage_msg + "\n" +\
+The script also supports two arguments for encoding (-e) and decoding (-d). Reviewing the part for decoding we can see it requires less than 4 arguments when it's run. In short running the script as
+```
+python3 ende.py -d pole.txt
+```
 
-        "Examples:\n" +\
+![exec](files/exec-code.png)
 
-        "  To decrypt a file named 'pole.txt', do: " +\
+We get the flag!
 
-        "'$ python "+ sys.argv[0] +" -d pole.txt'\n"
-
-  
-  
-  
-
-if len(sys.argv) < 2 or len(sys.argv) > 4:
-
-    print(usage_msg)
-
-    sys.exit(1)
-
-  
-  
-  
-
-if sys.argv[1] == "-e":
-
-    if len(sys.argv) < 4:
-
-        sim_sala_bim = input("Please enter the password:")
-
-    else:
-
-        sim_sala_bim = sys.argv[3]
-
-  
-
-    ssb_b64 = base64.b64encode(sim_sala_bim.encode())
-
-    c = Fernet(ssb_b64)
-
-  
-
-    with open(sys.argv[2], "rb") as f:
-
-        data = f.read()
-
-        data_c = c.encrypt(data)
-
-        sys.stdout.write(data_c.decode())
-
-  
-  
-
-elif sys.argv[1] == "-d":
-
-    if len(sys.argv) < 4:
-
-        sim_sala_bim = input("Please enter the password:")
-
-    else:
-
-        sim_sala_bim = sys.argv[3]
-
-  
-
-    ssb_b64 = base64.b64encode(sim_sala_bim.encode())
-
-    c = Fernet(ssb_b64)
-
-  
-
-    with open(sys.argv[2], "r") as f:
-
-        data = f.read()
-
-        data_c = c.decrypt(data.encode())
-
-        sys.stdout.buffer.write(data_c)
-
-  
-  
-
-elif sys.argv[1] == "-h" or sys.argv[1] == "--help":
-
-    print(help_msg)
-
-    sys.exit(1)
-
-  
-  
-
-else:
-
-    print("Unrecognized first argument: "+ sys.argv[1])
-
-    print("Please use '-e', '-d', or '-h'.")
+```
+picoCTF{4p0110_1n_7h3_h0us3_68f88f93}
 ```
