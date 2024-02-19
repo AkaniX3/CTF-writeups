@@ -18,7 +18,11 @@ In the given python script, we can see that the script requires a "pole.txt" fil
 
 ![code](files/code.png) 
 
-The script also supports two arguments for encoding (-e) and decoding (-d). Reviewing the part for decoding we can see it requires less than 4 arguments when it's run. In short running the script as
+The script also supports two arguments for encoding (-e) and decoding (-d). Reviewing the part for decoding we can see it requires less than 4 arguments when it's run. 
+
+![-d code](files/decode-code.png) 
+
+In short running the script as
 ```
 python3 ende.py -d pole.txt
 ```
