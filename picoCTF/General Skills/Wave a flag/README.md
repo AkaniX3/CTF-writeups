@@ -1,6 +1,6 @@
 ![desc](files/desc.png)
 
-This question requires us to change file permissions, and to do this we have the ```chmod``` command and setting executable permission by ```+x``` we can execute the file. 
+This question requires us to change file permissions, to do this we have the ```chmod``` command and setting permission to executable by ```+x``` we can execute the file. 
 
 ![warm](files/warm.png)
 
