@@ -8,7 +8,7 @@ This question requires us to launch an instance & connect via ssh.
 ssh ctf-player@venus.picoctf.net -p 52683
 ```
 
-Then Entering the given password
+Then entering the given password
 
 ![connect](files/connect-ssh.png)
 
