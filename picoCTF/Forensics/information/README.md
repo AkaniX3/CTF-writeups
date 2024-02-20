@@ -6,7 +6,7 @@ I chose doing it using the ```exiftool``` command. The ```exiftool``` gives us t
 
 ![exiftool](files/exiftool.png)
 
-The "License" seems like it might be the flag, so decoding this using base64 decoder
+The "License" seems like it might be the flag, so decoding this using base64 decoder in the terminal.
 
 ![flag](files/information.png)
 
