@@ -1,7 +1,7 @@
 # Mod 26 (picoCTF 2021 | 10 pts)
 
 
-![image](files/desc.png)
+![image](gg/picoCTF/Cryptography/Mod%2026/files/desc.png)
 
 In this cryptography category type question, it mentions about ROT13. 
 

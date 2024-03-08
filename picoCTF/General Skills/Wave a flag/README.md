@@ -1,4 +1,4 @@
-![desc](files/desc.png)
+![desc](gg/picoCTF/General%20Skills/Wave%20a%20flag/files/desc.png)
 
 This question requires us to change file permissions, to do this we have the ```chmod``` command and setting permission to executable by ```+x``` we can execute the file. 
 

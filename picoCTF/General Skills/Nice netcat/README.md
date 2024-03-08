@@ -1,4 +1,4 @@
-![desc](files/desc.png)
+![desc](gg/picoCTF/General%20Skills/Nice%20netcat/files/desc.png)
 
 Running the given netcat command we get a few numbers. 
 

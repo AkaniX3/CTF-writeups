@@ -1,6 +1,6 @@
 # Obedient Cat (picoCTF 2021 | 5 pts)
 
-![image 1](files/desc.png)
+![image 1](gg/picoCTF/General%20Skills/Obedient%20Cat/files/desc.png)
 
 We are given a file ![flag file](files/flag)
 

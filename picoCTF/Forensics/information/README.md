@@ -1,4 +1,4 @@
-![desc](files/desc.png)
+![desc](gg/picoCTF/Forensics/information/files/desc.png)
 
 In this question we can use multiple approaches to get information about the file. Some ways can be like using ```strings``` with ```grep``` or using ```binwalk``` or even an ```hexeditor``` .
 

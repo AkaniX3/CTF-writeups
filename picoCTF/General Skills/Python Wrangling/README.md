@@ -1,6 +1,6 @@
 # Python Wrangling (2021 | 10 pts)
 
-![image](files/desc.png)
+![image](gg/picoCTF/General%20Skills/Python%20Wrangling/files/desc.png)
 
 We are given a python script [ende](files/ende) 
 

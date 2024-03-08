@@ -1,6 +1,6 @@
 # Magikarp Ground Mission (2021 | 30 pts)
 
-![description](files/desc.png)
+![description](gg/picoCTF/General%20Skills/Magikarp%20Ground%20Mission/files/desc.png)
 
 This question requires us to launch an instance & connect via ssh.
 
