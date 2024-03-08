@@ -1,6 +1,8 @@
 ![desc](files/desc.png)
 
-![[Pasted image 20240223224022.png]]
+![cmd](files/cmd.png)
+
+![output](files/output.png)
 
 (update writeup of this) 
-(solution + explannation)
+(solution + explanation)
